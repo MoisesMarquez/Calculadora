@@ -1,0 +1,17 @@
+language: python
+python:
+  - "2.7"
+
+before_script:
+  - echo "anttes de ejecutar un script"
+
+install:
+  - echo "aqui se instala algo"
+
+script:
+  - echo "pruebas unitarias de Calculadora"
+  - python Test*.py
+  - echo "Finalizar"
+
+notifications:
+email: false
